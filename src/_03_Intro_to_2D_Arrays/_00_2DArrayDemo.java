@@ -54,12 +54,10 @@ public class _00_2DArrayDemo {
         
         // Loop through each 1D array
         for(int i = 0; i < newArray2d.length; i++) {
-
             // Loop through each element in the 1D array
             for(int j = 0; j < newArray2d[i].length; j++) {
                 System.out.print(newArray2d[i][j]);
             }
-
             System.out.println();
         }
     }
