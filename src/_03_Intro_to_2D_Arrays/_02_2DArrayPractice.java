@@ -1,5 +1,7 @@
 package _03_Intro_to_2D_Arrays;
 
+import java.util.Random;
+
 /*
  *  A 2D array is comparable to a matrix/grid ordered by rows and columns.
  *  A 2D array that holds 3, 1D arrays with each 1D array having 3 elements
@@ -31,8 +33,15 @@ public class _02_2DArrayPractice {
      *          6, 7, 8
      */
     public Integer[][] test1() {
-        
-        return null;
+    	Integer[][] array2D = new Integer[3][3];
+    	int num = 0;
+    	for(int i = 0; i < array2D.length; i++) {
+			for(int k = 0; k < array2D[i].length; k++) {
+				array2D[i][k] = num;
+				num++;
+			}
+		}
+        return array2D;
     }
     
     /*
@@ -41,8 +50,15 @@ public class _02_2DArrayPractice {
      *          "e", "f", "g", "e"
      */
     public String[][] test2() {
-        
-        return null;
+    	char letter = 'a';
+        String[][] string2D = new String[2][4];
+        for(int i = 0; i < string2D.length; i++) {
+        	for(int k = 0; k < string2D[i].length; k++) {
+        		string2D[i][k] = "" + letter;
+        		letter++;
+        	}
+        }
+        return string2D;
     }
     
     /*
@@ -54,8 +70,13 @@ public class _02_2DArrayPractice {
      *          true, false
      */
     public Boolean[][] test3() {
-        
-        return null;
+        Boolean[][] bool2D = new Boolean[5][2];
+        for(int i = 0; i < bool2D.length; i++) {
+        	for(int k = 0; k < bool2D[i].length; k++) {
+        		bool2D[i][k] = (i + k) % 3 == 0;
+        	}
+        }
+        return bool2D;
     }
     
     /*
