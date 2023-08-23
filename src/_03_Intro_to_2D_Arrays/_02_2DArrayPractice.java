@@ -70,12 +70,11 @@ public class _02_2DArrayPractice {
      *          true, false
      */
     public Boolean[][] test3() {
-        Boolean[][] bool2D = new Boolean[5][2];
-        for(int i = 0; i < bool2D.length; i++) {
-        	for(int k = 0; k < bool2D[i].length; k++) {
-        		bool2D[i][k] = (i + k) % 3 == 0;
-        	}
-        }
+        Boolean[][] bool2D = {{true, false}, 
+        						{false, false},
+        						{false, true},
+        						{true, true}, 
+        						{true, false}};
         return bool2D;
     }
     
@@ -88,8 +87,9 @@ public class _02_2DArrayPractice {
      * 
      * 
      * Show your teacher the grid you created
+     * 10, 41, 58
+     * 23, 91, 12
      */
-    
     /*
      * Draw the grid of values for the following 2D array of Robots
      * Assume all the elements in the 2D array are initialized.
@@ -99,6 +99,10 @@ public class _02_2DArrayPractice {
      * 
      * 
      * Show your teacher the grid you created
+     * Robot, Robot
+     * Robot, Robot
+     * Robot, Robot
+     * Robot, Robot
      */
     
     /* Given the array of Objects below, return the element that is not null
@@ -108,7 +112,7 @@ public class _02_2DArrayPractice {
     public Object test4() {
         Object[][] objects = { {null, null, null, null}, {null, null, null, new Object()} };
         
-        return null;
+        return objects[1][3];
     }
     
     /* Given the array of Objects below, return the element that is not null
@@ -118,7 +122,7 @@ public class _02_2DArrayPractice {
     public Object test5() {
         Object[][] objects = { {null, null, new Object(), null}, {null, null, null, null} };
         
-        return null;
+        return objects[0][2];
     }
     
     /*
@@ -127,8 +131,11 @@ public class _02_2DArrayPractice {
      */
     public Integer test6() {
         int[][] nums = { {8, 7, 6, 5}, {4, 3}, {2, 1, 0} };
-        
-        return null;
+        int sum = 0;
+        for(int i = 0; i < nums[0].length; i++) {
+        	sum += nums[0][i];
+        }
+        return sum;
     }
     
     /*
@@ -137,8 +144,11 @@ public class _02_2DArrayPractice {
      */
     public Integer test7() {
         int[][] nums = { {8, 7, 6, 5}, {4, 3}, {2, 1, 0} };
-        
-        return null;
+        int sum = 0;
+        for(int i = 0; i < nums.length; i++) {
+        	sum += nums[i][0];
+        }
+        return sum;
     }
     
     /*
@@ -146,8 +156,11 @@ public class _02_2DArrayPractice {
      * specified row
      */
     public Integer getSumByRow(int[][] matrix, int row) {
-        
-        return null;
+        int sum = 0;
+        for(int i = 0; i < matrix[row].length; i++) {
+        	sum += matrix[0][i];
+        }
+        return sum;
     }
     
     /*
@@ -155,8 +168,9 @@ public class _02_2DArrayPractice {
      * specified column
      */
     public Integer getSumByColumn(int[][] matrix, int col) {
+        int sum = 0;
         
-        return null;
+        return sum;
     }
     
     /*
