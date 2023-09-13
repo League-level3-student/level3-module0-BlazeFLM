@@ -81,11 +81,11 @@ public class ConwaysGameOfLife extends JPanel implements ActionListener{
                     if(x <= 0) {
                         x = 1;
                     }
-                }catch (NumberFormatException ex) {
+                } catch (NumberFormatException ex) {
                     ex.printStackTrace();
                 }
                 gamePanel.setAnimationDelay(x);
-            }else {
+            } else {
                 gamePanel.stopAnimation();
                 startStopButton.setText("START");
             }

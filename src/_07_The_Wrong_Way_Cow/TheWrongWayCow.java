@@ -48,12 +48,18 @@
 
 package _07_The_Wrong_Way_Cow;
 
+import java.util.HashMap;
+
 public class TheWrongWayCow {
 
     public static int[] findWrongWayCow(final char[][] field) {
         // Fill in the code to return the [col, row] coordinate position of the
         // head (letter 'c') of the wrong way cow!
-        
+        int north = 0;
+        int south = 0;
+        int east = 0;
+        int west = 0;
+        HashMap<String, int[]> hm = new HashMap<String, int[]>(4);
         return null;
     }
 }
